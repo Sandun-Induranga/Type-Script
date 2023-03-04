@@ -73,8 +73,8 @@ let employee1: Employee = { id: 1, name: "Dasun" };
 
 // Union Types
 
-function getNumber(myNumber: number | string) {
-  console.log(myNumber);
+function getNumber(myNumber: number | string): number {
+  return typeof myNumber === "string" ? parseInt(myNumber) : myNumber;
 }
 
 getNumber("10");
