@@ -13,3 +13,17 @@ let person = [1, "Dasun"];
 function calculate() {
     return "";
 }
+// Function With Type Safe
+function calculateAverageMark(subjectCount, totalMarks) {
+    return totalMarks / subjectCount;
+}
+let avg = calculateAverageMark(5, 420);
+console.log(avg);
+// Functions with Optional Parameters
+// Use ? for optional parameters
+function addTwoNumber(firstNumber, secontNumber) {
+    if (secontNumber)
+        return firstNumber + secontNumber;
+    return firstNumber;
+}
+console.log(addTwoNumber(10));
