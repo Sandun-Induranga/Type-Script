@@ -27,3 +27,16 @@ function addTwoNumber(firstNumber, secontNumber) {
     return firstNumber;
 }
 console.log(addTwoNumber(10));
+// Objects
+let student = {
+    id: 1,
+    name: "Dasun",
+};
+let teacher = {
+    id: 1,
+    name: "Dasun",
+    enroll: (date) => {
+        console.log(date);
+    },
+};
+teacher.enroll(new Date());
