@@ -44,3 +44,10 @@ function addTwoNumber(firstNumber: number, secontNumber?: number): number {
 }
 
 console.log(addTwoNumber(10));
+
+// Objects
+
+let customer: { id: number; name: string; age?: number } = {
+  id: 1,
+  name: "Dasun",
+};
