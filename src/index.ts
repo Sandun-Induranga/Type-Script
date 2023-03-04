@@ -78,3 +78,11 @@ function getNumber(myNumber: number | string): number {
 }
 
 getNumber("10");
+
+// Nullable Values
+
+function generate(name: string | null | undefined) {
+  console.log(name ? name : "Nothing");
+}
+generate(null);
+generate(undefined);

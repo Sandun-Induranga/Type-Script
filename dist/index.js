@@ -41,3 +41,14 @@ let teacher = {
 };
 teacher.enroll(new Date());
 let employee1 = { id: 1, name: "Dasun" };
+// Union Types
+function getNumber(myNumber) {
+    return typeof myNumber === "string" ? parseInt(myNumber) : myNumber;
+}
+getNumber("10");
+// Nullable Values
+function generate(name) {
+    console.log(name ? name : "Nothing");
+}
+generate(null);
+generate(undefined);
