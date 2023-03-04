@@ -40,3 +40,4 @@ let teacher = {
     },
 };
 teacher.enroll(new Date());
+let employee1 = { id: 1, name: "Dasun" };

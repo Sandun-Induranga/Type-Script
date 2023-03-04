@@ -61,3 +61,20 @@ let teacher: { id: number; name: string; enroll: (date: Date) => void } = {
 };
 
 teacher.enroll(new Date());
+
+// Type Aliases
+
+type Employee = {
+  id: number;
+  name: string;
+};
+
+let employee1: Employee = { id: 1, name: "Dasun" };
+
+// Union Types
+
+function getNumber(myNumber: number | string) {
+  console.log(myNumber);
+}
+
+getNumber("10");
